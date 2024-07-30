@@ -53,10 +53,26 @@ nav>ul>li>a,.logo{
     color: white;
 }
 
+.burger{
+width:32px;
+height:32px;
+display:none;
+flex-direction: column;
+gap: 4px;
+align-items: center;
+justify-content: center;
+}
+.bar{
+width: 28px;
+height: 2px;
+background-color: white;
+}
+
 .section{
     position: relative;
     width:100%;
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -210,6 +226,8 @@ margin: 20px 0;
     color: white;
 
 }
+
+
 #last-call{
     flex-direction: column;
     color: white;
@@ -246,4 +264,85 @@ footer>.logo{
 .logo{
     font-size: 32px;
     letter-spacing: 2px;
+}
+
+
+
+
+
+@media screen and (max-width:1440px){
+    .middle-box{
+        width:1024px;
+    }
+    
+    .small-box{
+        width: 960px;
+    }
+
+    h1{
+        font-size: 56px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p,a{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .middle-box{
+        width:768px;
+    }
+    
+    .small-box{
+        width: 480px;
+    }
+    
+
+}
+
+@media screen and (max-width:768px){
+    header{
+        padding: 0 40px;
+    }
+    nav{display: none;}
+    .burger{
+        display: flex;
+    }
+    .middle-box{
+        width:480px;
+    }
+    
+    .small-box{
+        padding: 20px;
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    #hero{
+        flex-direction: column;
+    }
+    #hero-image,#hero-text{
+        width: 100%;
+    }
+
+    #hero-text{
+        padding: 40px;
+    }
+    .middle-box{
+        width:320px;
+    }
+    
+    .small-box{
+        width: 320px;
+    }
 }
