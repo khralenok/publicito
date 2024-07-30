@@ -10,14 +10,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header><a class="logo">PUBLICITO</a><nav><ul><li><a>Who we are</a></li><li><a>Services</a></li><li><a>What we obsessed with</a></li></ul></nav></header>
+        <header><a class="logo" href="#">PUBLICITO</a><nav><ul><li><a href="#usp">Who we are</a></li><li><a href="#services">Services</a></li><li><a href="#advantages">What we obsessed with</a></li></ul></nav></header>
 
         <div class="section">
             <div class="container" id="hero">
                 <div id="hero-text">
                     <h1>Marketing con chispa</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. Interdum non sit sed in nulla odio fames facilisi elit.</p>
-                    <button>Lorem Ipsum</button>
+                    <a class="btn" href="#last-call">Contact us</a>
                 </div>
                 <div id="hero-image">
                     <img src="images/hero-illustration.png" alt="">
@@ -57,7 +57,11 @@
                         </div>
                         <div id="service-item">
                             <div id="service-illustration"><img src="images/services-illustration.png"></div>
+                            <div id="description-box">
+                            <div class="separator"></div>
                             <p id="service-description">We design websites and landing pages that shine brighter than the lights of Tibidabo. Because in Barcelona, we know how to blend art with technology!</p>
+                            <div class="separator"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,8 +114,8 @@
             </div>
         </div>
         <footer>
-            <a class="logo">PUBLICITO</a>
-            <nav><ul><li><a>Who we are</a></li><li><a>Services</a></li><li><a>What we obsessed with</a></li></ul></nav>
+            <a class="logo" href="#">PUBLICITO</a>
+            <nav><ul><li><a href="#usp">Who we are</a></li><li><a href="#services">Services</a></li><li><a href="#advantages">What we obsessed with</a></li></ul></nav>
         </footer>
 
 
@@ -154,18 +158,27 @@
     
             // Function to handle menu item click
             function handleMenuItemClick(event) {
-                const serviceId = event.target.id;
-                const service = services[serviceId];
-                if (service) {
-                    document.getElementById("service-illustration").innerHTML = `<img src="${service.img}" alt="Service Illustration">`;
-                    document.getElementById("service-description").textContent = service.description;
-                }
-            }
-    
-            // Attach click event listeners to all menu items
-            document.querySelectorAll(".service-menu-item").forEach(item => {
-                item.addEventListener("click", handleMenuItemClick);
-            });
+        // Remove active class from all menu items
+        document.querySelectorAll(".service-menu-item").forEach(item => {
+            item.classList.remove("active");
+        });
+
+        // Add active class to the clicked menu item
+        event.target.classList.add("active");
+
+        // Update the content
+        const serviceId = event.target.id;
+        const service = services[serviceId];
+        if (service) {
+            document.getElementById("service-illustration").innerHTML = `<img src="${service.img}" alt="Service Illustration">`;
+            document.getElementById("service-description").textContent = service.description;
+        }
+    }
+
+    // Attach click event listeners to all menu items
+    document.querySelectorAll(".service-menu-item").forEach(item => {
+        item.addEventListener("click", handleMenuItemClick);
+    });
         </script>
 
 

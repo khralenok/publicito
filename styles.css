@@ -48,6 +48,11 @@ nav>ul{
     padding: 0px;
 }
 
+nav>ul>li>a,.logo{
+    text-decoration: none;
+    color: white;
+}
+
 .section{
     position: relative;
     width:100%;
@@ -72,8 +77,11 @@ nav>ul{
 }
 
 
-button{
+.btn{
 background-color: #01FFFF;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
 padding: 16px 16px;
 max-width: 400px;
 border-radius: 32px;
@@ -119,6 +127,13 @@ color:#005078;
     color: white;
 }
 
+#usp>.small-box{
+    background-color:#1482C8;;
+    border-radius: 32px;
+    padding: 40px;
+    border: 4px solid #01FFFF;
+}
+
 .wrapper{
     text-align: center;
     display: flex;
@@ -157,12 +172,35 @@ color:#005078;
     text-transform: uppercase;
 }
 
+.service-menu-item.active{
+    padding: 5px 20px;
+    background-color: #D3B7FF;
+    transform: rotate(2deg);
+}
+
 #service-item{
     width: 70%;
     text-align: left;
 }
 #service-illustration, #service-illustration>img, #service-illustration>p{
     width: 100%;
+}
+
+#service-illustration{
+    margin-bottom: 40px;
+}
+
+#description-box{
+    height: 100px;
+}
+.separator{
+    background-color: #5A3296;
+    width: 100%;
+    height: 4px;
+}
+
+#service-description{
+margin: 20px 0;
 }
 
 #advantages{
@@ -197,7 +235,7 @@ footer{
     padding: 60px 0 120px 0;
 }
 
-footer>nav>ul{
+footer>nav>ul>li>a{
     color:rgba(255,255,255,0.3);
 }
 
