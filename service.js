@@ -2,15 +2,15 @@
             const services = {
                 1: {
                     img: "images/graphic-design.png",
-                    description: "Our graphic design services will make your brand stand out with visually striking designs."
+                    description: "Our team of graphic designers creates pieces that not only speak but shout 'wow!' in the universal language of design."
                 },
                 2: {
                     img: "images/social-media.png",
-                    description: "Let us manage your social media presence and engage with your audience effectively."
+                    description: "We handle your social media like a DJ at an epic party. Likes, shares, and comments—all in perfect harmony!"
                 },
                 3: {
                     img: "images/copywriting.png",
-                    description: "We provide copywriting services that convey your message clearly and compellingly."
+                    description: "We craft copy that makes algorithms laugh and users feel. It's not magic, just pure talent!"
                 },
                 4: {
                     img: "images/web-design.png",
@@ -18,19 +18,19 @@
                 },
                 5: {
                     img: "images/ad-campaigns.png",
-                    description: "Our ad campaigns are designed to capture attention and drive results."
+                    description: "We turn clicks into customers with ad campaigns that are more addictive than cat memes."
                 },
                 6: {
                     img: "images/creative-campaign.png",
-                    description: "We create innovative campaigns that resonate with your audience and drive engagement."
+                    description: "From disruptive ideas to flawless executions. We create campaigns that you won’t forget!"
                 },
                 7: {
                     img: "images/strategy.png",
-                    description: "We offer strategic planning for both digital and offline marketing to achieve your goals."
+                    description: "We craft strategies like secret plans: blending the digital with the real for results that feel like finding cash in an old pair of jeans."
                 },
                 8: {
                     img: "images/more-services.png",
-                    description: "And much more... contact us to learn how we can help your business grow."
+                    description: "We’re more than just creative minds—we’re the secret sauce of advertising!"
                 }
             };
     
