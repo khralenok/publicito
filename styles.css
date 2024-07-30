@@ -150,11 +150,41 @@ color:#005078;
     border: 4px solid #01FFFF;
 }
 
-.wrapper{
+.advantages-wrapper{
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap:20px;
+}
+.advantage-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F5FF8C;
+    width:400px;
+    height:140px;
+}
+
+.advantage-title-box{
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    left: auto;
+    right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.advantage-item>.advantage-title-box>h3{
+    background-color: #EB6423;
+    padding: 0 10px;
+}
+
+.advantage-item>p{
+    margin:20px;
 }
 #services{
     padding: 80px 0;
@@ -168,19 +198,20 @@ color:#005078;
 }
 .service-container{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 100%
 }
 #service-menu{
-    width: 30%;
-    text-align: left;
+    width: 100%;
 }
 #service-menu>ul{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: left;
+    gap: 0px 20px;
+    padding: 0px;
+    margin-bottom: 20px;
 }
 #service-menu>ul>li>a{
     font-family: "Jomhuria", serif;
@@ -195,7 +226,7 @@ color:#005078;
 }
 
 #service-item{
-    width: 70%;
+    width: 100%;
     text-align: left;
 }
 #service-illustration, #service-illustration>img, #service-illustration>p{
@@ -312,7 +343,15 @@ footer>.logo{
     header{
         padding: 0 40px;
     }
-    nav{display: none;}
+
+    header>nav{display: none;}
+
+    footer>nav>ul{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
     .burger{
         display: flex;
     }
