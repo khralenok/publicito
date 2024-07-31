@@ -54,7 +54,7 @@ nav>ul>li>a,.logo{
     color: white;
 }
 
-.burger{
+#burger{
 width:32px;
 height:32px;
 display:none;
@@ -392,7 +392,26 @@ footer>.logo{
         padding: 0 40px;
     }
 
-    header>nav{display: none;}
+    #header-menu{
+        display: none;
+    }
+
+    #header-menu>ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-menu.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:72px;
+        left:0;
+        width: 100vw;
+        padding: 40px 0;
+        background-color: #EB6423;
+        z-index: 320;
+    }
 
     footer>nav>ul{
     flex-direction: column;
@@ -400,7 +419,7 @@ footer>.logo{
     text-align: center;
 }
 
-    .burger{
+    #burger{
         display: flex;
     }
     .middle-box{
