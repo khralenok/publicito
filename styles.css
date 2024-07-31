@@ -151,6 +151,11 @@ color:#005078;
     position: absolute;
     left:-2px
 }
+
+.hero-edge-m{
+    display: none;
+}
+
 #usp{
     flex-direction: column;
     width:100%;
@@ -393,6 +398,9 @@ footer>.logo{
 }
 
 @media screen and (max-width:768px){
+    .hero-edge{
+        rotate: 90deg;
+    }
     .btn{
         font-size: 28px;
         line-height: 20px;
@@ -411,6 +419,18 @@ footer>.logo{
     #header-menu{
         display: none;
     }
+
+    .hero-edge{
+        display: none;
+    }
+
+    .hero-edge-m{
+        display: block;
+        position: absolute;
+        top: -2px;
+        width: 102%;
+    }
+    
 
     #header-menu>ul{
         flex-direction: column;
