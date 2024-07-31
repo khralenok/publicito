@@ -294,6 +294,17 @@ margin: 20px 0;
     text-align: center;
 }
 
+.last-call-card>.title{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.last-call-card>.title>h2{
+    margin-bottom: -40px;
+}
+
 footer{
     width: 100%;
     display: flex;
@@ -438,12 +449,24 @@ footer>.logo{
         width: 300px;
     }
 
+    .last-call-card{
+        padding: 20px;
+    }
+    .last-call-card>.title{
+        gap: 50px;
+        padding: 20px 0;
+    }
+
+    .last-call-card>.title>h2{
+        margin-bottom: -40px;
+    }
+
 }
 
 @media screen and (max-width:540px){
 
     .title{
-        margin: 20px
+        margin-bottom: 20px
     }
     h2{
         font-size: 48px;
