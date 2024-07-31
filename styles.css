@@ -54,6 +54,11 @@ nav>ul>li>a,.logo{
     color: white;
 }
 
+#language-switcher>a{
+color: white;
+text-decoration: none;
+}
+
 #burger{
 width:32px;
 height:32px;
