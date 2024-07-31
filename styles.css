@@ -146,9 +146,10 @@ color:#005078;
     width: 104%;
 }
 .hero-edge{
-    height: 102%;
+    height: 106%;
     width: auto;
     position: absolute;
+    top: -2px;
     left:-2px
 }
 
