@@ -198,6 +198,7 @@ color:#005078;
     padding: 5px 20px;
     background-color: #D3B7FF;
     border: 2px solid #5A3296;
+    flex: 1 1 auto;
 }
 .service-menu-item.active{
     background-color: #5A3296;
@@ -212,8 +213,12 @@ color:#005078;
     width: 100%;
 }
 
+
 #service-illustration{
+    display: flex;
+    justify-content: center;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 #description-box{
@@ -357,11 +362,32 @@ footer>.logo{
     .small-box{
         width: 480px;
     }
-    
+
+    .edge{
+    width: 150%;
+    }
+    .advantage-item{
+        width: 340px;
+    }
+
+    .advantages-wrapper{
+        gap: 40px 30px;
+    }
 
 }
 
 @media screen and (max-width:768px){
+    .btn{
+        font-size: 28px;
+        line-height: 20px;
+        padding: 18px 24px 12px 24px;
+    }
+    #hero{
+        flex-direction: column;
+    }
+    #hero-image,#hero-text{
+        width: 100%;
+    }
     header{
         padding: 0 40px;
     }
@@ -378,26 +404,37 @@ footer>.logo{
         display: flex;
     }
     .middle-box{
-        width:480px;
+        width: 540px;
     }
     
     .small-box{
         padding: 20px;
         width: 320px;
     }
+    .edge{
+        width: 175%;
+        }
+
+    .advantage-item{
+        width: 300px;
+    }
 
 }
 
-@media screen and (max-width:480px){
-    #hero{
-        flex-direction: column;
-    }
-    #hero-image,#hero-text{
-        width: 100%;
-    }
+@media screen and (max-width:540px){
 
+    .title{
+        margin: 20px
+    }
+    h2{
+        font-size: 48px;
+        line-height: 40px;
+    }
     #hero-text{
         padding: 40px;
+    }
+    #usp{
+        padding: 80px 0;
     }
     .middle-box{
         width:320px;
@@ -405,5 +442,35 @@ footer>.logo{
     
     .small-box{
         width: 320px;
+    }
+    .edge{
+        width: 200%;
+        }
+    p,a{
+        font-size: 16px;
+    }
+    #service-illustration{
+        height: 320px;
+        width: 320px;
+    }
+    #service-illustration>img{
+        width: auto;
+        height: 100%;
+    }
+    .service-menu-item{
+        font-size: 18px;
+        border-width: 1px;
+        padding: 2px 4px;
+    }
+
+    #description-box{
+        height: auto;
+    }
+    .advantage-item{
+        height: 80px;
+        width: 320px;
+    }
+    .advantages-wrapper{
+        margin-top: 40px
     }
 }
