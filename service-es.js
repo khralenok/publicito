@@ -26,7 +26,7 @@
                 },
                 7: {
                     img: "images/strategy.png",
-                    description: "Tejemos estrategias que son como planes secretos: combinamos lo digital con lo real para resultados que son como encontrar dinero en los bolsillos de un pantalón viejo."
+                    description: "Tejemos estrategias que son como planes secretos: combinamos lo digital con lo real para obtener resultados que son como encontrar dinero en los bolsillos de un pantalón viejo"
                 },
                 8: {
                     img: "images/more-services.png",
