@@ -191,6 +191,11 @@ a:link.btn {
   border-radius: 2rem;
   color: var(--dark-cerulean);
   flex-grow: 0;
+  transition: transform 1s;
+}
+
+a:link.btn:hover {
+  transform: scale(1.05);
 }
 
 /* OVERRIDES */
