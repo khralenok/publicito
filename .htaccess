@@ -1,0 +1,13 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect /en or /es to the appropriate index.html
+RewriteRule ^en$ /index.html [L]
+RewriteRule ^es$ /es.html [L]
+
+# Redirect /en or /es to the appropriate index.html
+RewriteRule ^cookie-policy$ /cookie-policy.html [L]
+RewriteRule ^privacy-policy$ /privacy-policy.html [L]
+
+# Optionally, redirect the root to English or Spanish
+RewriteRule ^$ /index.html [L]    
