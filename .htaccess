@@ -8,6 +8,7 @@ RewriteRule ^es$ /es.html [L]
 RewriteRule ^cookie-policy$ /cookie-policy.html [L]
 RewriteRule ^privacy-policy$ /privacy-policy.html [L]
 RewriteRule ^cookie-policy-es$ /cookie-policy-es.html [L]
+RewriteRule ^privacy-policy-es$ /privacy-policy-es.html [L]
 
 # Optionally, redirect the root to English or Spanish
 RewriteRule ^$ /index.html [L]    
